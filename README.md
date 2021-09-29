@@ -1,7 +1,7 @@
-# Example `cml-runner` workflow
+# Ideathon 2021 - `cml-runner` workflow for EC2 instance
 
-This repository contains a sample project using [CML](https://github.com/iterative/cml) to provision and launch a small EC2 instance and run a machine learning workflow on the instance:
-- GitHub will deploy a runner machine and setup CML with the `setup-CML` GitHub Action
+This repository contains a sample project using Github actions to provision and launch a small EC2 instance and run a machine learning workflow on the instance:
+- GitHub will deploy a runner machine and setup with the GitHub Action
 - The workflow uses `cml-runner` to provision and launch a `t2.micro` instance on AWS EC2
 - The new `t2.micro` instance runs a workflow to pull a Docker container, install Python package requirements, and train a `scikitlearn` model.
 - CML returns a summary of the model accuracy and a confusion matrix as a comment in your Pull Request. 
